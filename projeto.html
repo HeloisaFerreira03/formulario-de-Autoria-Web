@@ -1,0 +1,147 @@
+<!-- você terá que acessar na sua url: localhost:8000/projeto.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="projeto.css">
+    <script src="java.js" defer></script>
+    <img src="https://portal.ifrn.edu.br/static/images/logo.svg?da3b22901768" alt="IFRN logo">
+    <img src="https://suap.ifrn.edu.br/static/comum/img/logo-login.svg" alt="imagem de entrada"> 
+
+</head>
+<body>
+     
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#projeto.html">Formulário</a></li>
+                <li><a href="devs.html">Página dos Devs</a></li>
+                <li><a href="dadosdousuario.html">Dados do Usuário</a></li>
+                
+            </ul>
+        <nav>
+
+      </header>
+
+   <main>
+    <article>
+      <header>
+            <h1>IFRN</h1>
+            <h3>Formulários</h3>
+      </header>
+     <section class="inicio" id="inicio"></section>
+      <form action="server.php" method="post">
+
+        <div class="grupo">
+            <label for="nome"> Seu nome </label>
+            <input type="text" id="nome" name="nome" class="controle" placeholder="nome completo"/>
+        </div>
+
+        <div class="grupo">
+            <label for="Data">Data de entrada na instituição</label>
+            <input type="date" id="Data" name="Data" class="controle">
+        </div>
+
+        <div class="grupo">
+            <label for="função">Servidor(a)</label>
+            <input type="radio" name="função" id="função" value="serv" class="controle">
+        </div>
+
+        <div class="grupo">
+            <label for="função">Aluno(a)</label>
+            <input type="radio" name="função" id="função" value="aluno" class="controle">
+        </div>
+
+        <div class="grupo">
+            <label for="email">E-mail escolar</label>
+            <input type="email" name="email" id="email" class="controle" placeholder="xxx.xxxa@academico.ifrn.edu.br">
+        </div>
+
+        <div class="grupo">
+            <label for="Anos">Anos totais na instituição</label>
+            <input type="number" id="Anos" name="Anos" class="controle" placeholder="1,2,3...">
+        </div>
+
+        <p>seus cursos favoritos do IFRN</p>
+        <div class="grupo">
+            <label for="botão">Informática</label>
+            <input type="checkbox" id="botão" name="botão" class="">
+        </div>
+
+        <div>
+            <label for="botão">Manutensão e Suporte em Informática</label>
+            <input type="checkbox" id="botão" name="botão" class="">   
+        </div>
+
+        <div>
+            <label for="botão">Mecânica</label>
+            <input type="checkbox" id="botão" name="botão" class="">
+        </div>
+
+        <div>
+            <label for="botão">Refrigeração</label>
+            <input type="checkbox" id="botão" name="botão" class="">
+        </div>
+
+        <div class="grupo">
+            <label for="telefone">Informe seu telefone</label>
+            <input type="tel" id="telefone" name="telefone" class="controle" placeholder="(xx) x xxxx-xxxx">
+        </div>
+
+        <div class="grupo">
+            <label for="cor">Nova farda para o IF escolha as cores(use a criatividade)</label>
+            <p>base da farda</p>
+            <input type="color" id="cor" name="corbase" class="controle">
+            <p>cor secundária</p>
+            <input type="color" id="cor" name="corsecundária" class="controle">
+            <p>cor terciária</p>
+            <input type="color" id="cor" name="corterciária" class="controle">
+        </div>
+
+        <div class="grupo">
+            <label for="senha">Numa escala de 0 a 10, o quanto você gosta do IF campus Santa Cruz</label>
+            <input type="range" id="escala" name="escala" value="0" min="0" max="10"
+            oninput="display.value=value" onchange="display.value=value">
+            <input type="text" id="display" value="0" readonly>
+        
+        </div>
+
+        <div  class="grupo">
+            <label for="resetar">Resetar informações</label>
+            <input type="reset" id="resetar" name="resetar" class="btn" value="resetar">
+        </div>
+
+        <div  class="grupo">
+            <label for="enviar">Enviar informações</label>
+            <input type="submit" id="enviar" name="enviar" value="logar" class="btn">
+        </div>
+
+
+      </form>
+     </section>
+    </article>
+   </main>
+   <div>
+
+   </div>
+   <footer>
+       <div>
+            <p>IFRN campus Santa Cruz</p>
+       </div>
+       <div>
+           <p>Trabalho de Autoria web, Prof. Marcelo Figueredo Barbosa Júnior</p>
+       </div>
+       <div>
+           <p>Componentes: Heloísa Moraes Ferreira, Laura Ferreira Pontes, Guerlain Vinícius Cavalcante Pereira</p>
+       </div>
+       <div>
+           <p>Referências: mdn web docs e dev media</p>
+       </div>
+   </footer>
+ 
+</body>
+</html>
